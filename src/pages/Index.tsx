@@ -67,7 +67,7 @@ const Index = () => {
         <div className="flex items-center justify-between mb-2 border-b border-matrix/30 pb-2">
           <div className="flex items-center gap-2">
             <Terminal className="h-5 w-5 text-matrix" />
-            <span className="text-matrix/80 text-sm">matrix_clan_terminal_v1.0</span>
+            <span className="text-matrix/80 text-sm">matrix_clan_database_v2.5</span>
           </div>
           <div className="flex items-center gap-2">
             <Code className="h-4 w-4 text-matrix/60" />
@@ -79,7 +79,7 @@ const Index = () => {
           {isLoaded ? (
             <>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                <GlitchText text="Welcome to The Matrix Clan" className="text-matrix font-glitch" />
+                <GlitchText text="The Matrix Clan" className="text-matrix font-glitch" />
               </h1>
               <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                 <GlitchText 
@@ -131,7 +131,6 @@ const Index = () => {
         {isLoaded && (
           <footer className="mt-16 py-4 text-center text-matrix/60 text-sm border-t border-matrix/20">
             <p>&gt; The Matrix Clan Legacy Archive - All systems operational</p>
-            <p className="mt-2">&gt; <span className="inline-block w-2 h-4 bg-matrix animate-pulse"></span></p>
             <p className="mt-4 text-xs text-matrix/40">
               &copy; All Rights Reserved 2025-2026
             </p>

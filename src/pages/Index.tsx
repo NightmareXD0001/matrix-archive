@@ -9,12 +9,32 @@ import { Terminal, Code } from 'lucide-react';
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
+  const [terminalText, setTerminalText] = useState<string[]>([]);
+  const terminalMessages = [
+    '> Connecting to Matrix mainframe...',
+    '> Access granted',
+    '> Loading clan leadership archives...',
+    '> Archives decoded',
+    '> Displaying records - [2010-2025]_'
+  ];
 
   useEffect(() => {
     // Simulate terminal load effect
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 1000);
+    
+    // Terminal text typing effect
+    const typeTerminalText = async () => {
+      for (let i = 0; i < terminalMessages.length; i++) {
+        await new Promise(resolve => setTimeout(resolve, 800));
+        setTerminalText(prev => [...prev, terminalMessages[i]]);
+      }
+    };
+
+    if (isLoaded) {
+      typeTerminalText();
+    }
     
     // Hide scroll indicator after a delay
     const scrollTimer = setTimeout(() => {
@@ -35,7 +55,7 @@ const Index = () => {
       clearTimeout(scrollTimer);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isLoaded]);
 
   return (
     <div className="min-h-screen bg-matrix-black text-white font-matrix relative overflow-x-hidden">
@@ -63,7 +83,7 @@ const Index = () => {
           {isLoaded ? (
             <>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                <GlitchText text="Welcome to The Matrix Clan" className="text-matrix font-glitch animate-glow-pulse" />
+                <GlitchText text="Welcome to The Matrix Clan" className="text-matrix font-glitch" />
               </h1>
               <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                 <GlitchText 
@@ -92,11 +112,11 @@ const Index = () => {
         {/* Matrix "terminal connecting" effect */}
         {isLoaded && (
           <div className="mb-12 text-sm text-matrix/70 font-mono">
-            <div>&gt; Connecting to Matrix mainframe...</div>
-            <div>&gt; Access granted</div>
-            <div>&gt; Loading clan leadership archives...</div>
-            <div>&gt; Archives decoded</div>
-            <div className="mt-2">&gt; Displaying records - [2010-2024]_</div>
+            {terminalText.map((text, index) => (
+              <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                {text}
+              </div>
+            ))}
           </div>
         )}
         

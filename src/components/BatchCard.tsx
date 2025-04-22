@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
 import { ChevronDown } from 'lucide-react';
@@ -27,7 +26,6 @@ const BatchCard: React.FC<BatchCardProps> = ({ batch, isActive = false, classNam
       className={cn(
         'relative border border-matrix/30 bg-matrix-terminal/70 backdrop-blur-sm rounded-md overflow-hidden',
         'transition-all duration-300 group hover:border-matrix/70',
-        'hover:shadow-[0_0_15px_rgba(0,255,65,0.3)]',
         className
       )}
       style={style}
@@ -35,7 +33,7 @@ const BatchCard: React.FC<BatchCardProps> = ({ batch, isActive = false, classNam
       <Accordion type="single" defaultValue={isActive ? batch.year : undefined} collapsible>
         <AccordionItem value={batch.year} className="border-none">
           <AccordionTrigger className="p-4 hover:no-underline group flex justify-between">
-            <h3 className="font-glitch text-xl md:text-2xl text-matrix group-hover:animate-glow-pulse">
+            <h3 className="font-glitch text-xl md:text-2xl text-matrix">
               Batch of {batch.year}
             </h3>
             <ChevronDown className="h-5 w-5 shrink-0 text-matrix transition-transform duration-300" />
@@ -58,7 +56,6 @@ const BatchCard: React.FC<BatchCardProps> = ({ batch, isActive = false, classNam
         </AccordionItem>
       </Accordion>
       
-      {/* Edge glow effect */}
       <div className="absolute inset-0 pointer-events-none border border-matrix/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
     </div>
   );

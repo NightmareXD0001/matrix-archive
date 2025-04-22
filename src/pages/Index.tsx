@@ -9,6 +9,7 @@ const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
   const [terminalText, setTerminalText] = useState<string[]>([]);
+  const [isTerminalComplete, setIsTerminalComplete] = useState(false);
   const terminalMessages = [
     '> Connecting to Matrix mainframe...',
     '> Access granted',
@@ -26,6 +27,10 @@ const Index = () => {
       for (let i = 0; i < terminalMessages.length; i++) {
         await new Promise(resolve => setTimeout(resolve, 800));
         setTerminalText(prev => [...prev, terminalMessages[i]]);
+        if (i === terminalMessages.length - 1) {
+          await new Promise(resolve => setTimeout(resolve, 500));
+          setIsTerminalComplete(true);
+        }
       }
     };
 
@@ -109,8 +114,8 @@ const Index = () => {
           </div>
         )}
         
-        {isLoaded && (
-          <section className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+        {isLoaded && isTerminalComplete && (
+          <section className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 animate-fade-in">
             {batchData.map((batch, index) => (
               <BatchCard 
                 key={batch.year} 

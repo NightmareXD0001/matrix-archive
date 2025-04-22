@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# 🕶️ The Matrix Clan Archive
 
-## Project info
+> “The past cannot be changed, but it can be remembered.”  
+> — _Welcome to The Archive_
 
-**URL**: https://lovable.dev/projects/4d0d0ca0-f6f7-443e-a539-20458545c4d8
+## 🗃️ About
 
-## How can I edit this code?
+This site is a digital archive of **The Matrix Clan's** legacy — preserving the leadership of every batch from **2010 to the present**. It serves as a tribute to those who led, contributed, and shaped the journey of the clan over the years.
 
-There are several ways of editing your application.
+Whether you’re reminiscing about your own term or exploring the roots of The Matrix Clan, the Archive gives you a glimpse into the minds that ran the Matrix.
 
-**Use Lovable**
+## 🧠 Contents
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4d0d0ca0-f6f7-443e-a539-20458545c4d8) and start prompting.
+Each batch entry includes:
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🏆 **President**
+- ⚙️ **Vice President**
+- 📋 **General Secretary**
+- 🔗 **Joint Secretary**
+- 🔹 **Executive Members**
 
-**Use your preferred IDE**
+## 🚀 Live Site
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔗 [Visit the Archive](https://archive.thematrixclan.com/)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Built With
 
-Follow these steps:
+- **Vite** – Fast modern frontend tooling
+- **TypeScript** – Type-safe components
+- **React** – Component-driven architecture
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧬 Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+/src
+  └── components
+      └── BatchCard.tsx
+  └── data
+      └── batchData.ts  ← All leadership data lives here
 ```
 
-**Edit a file directly in GitHub**
+## 📦 Adding Future Batches
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To update the Archive with new batches:
+1. Open `batchData.ts`
+2. Add the new year's object using the existing format
+3. Commit and deploy 💥
 
-**Use GitHub Codespaces**
+## ⚠️ Disclaimer
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+All data presented here is based on official records provided by The Matrix Clan and its members. If you notice any error, please reach out or submit a correction.
 
-## What technologies are used for this project?
+## 🧩 Credits
 
-This project is built with:
+- Maintained by: **The Matrix Clan**
+- Design inspiration from the Matrix Universe 🟩
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4d0d0ca0-f6f7-443e-a539-20458545c4d8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+> _Remember, the Archive isn't just about names—it's about legacy._

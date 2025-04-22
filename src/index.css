@@ -107,7 +107,26 @@
   }
 }
 
-/* Custom global styles for Matrix theme */
+@layer utilities {
+  /* Custom scrollbar for Matrix theme */
+  ::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 255, 65, 0.1); /* Translucent matrix green background */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00FF41; /* Bright matrix green */
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 65, 0.8); /* Slightly more opaque on hover */
+  }
+}
+
 @layer components {
   .matrix-glow {
     text-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41;

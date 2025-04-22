@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -96,6 +99,21 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-matrix-black text-foreground;
+  }
+  
+  html {
+    @apply dark;
+  }
+}
+
+/* Custom global styles for Matrix theme */
+@layer components {
+  .matrix-glow {
+    text-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41;
+  }
+  
+  .matrix-border {
+    border-color: rgba(0, 255, 65, 0.3);
   }
 }

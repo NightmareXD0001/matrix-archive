@@ -116,8 +116,8 @@ const Psynapse = () => {
         )}
         
         {isLoaded && (
-          <footer className="mt-16 py-4 text-center text-purple-500/60 text-sm border-t border-purple-200">
-            <p>&gt; Neural Research Platform - All systems operational</p>
+          <footer className="mt-16 py-4 text-center text-purple-500/60 text-sm border-t border-purple-600">
+            <p>&gt; The Matrix Clan Legacy Archive - All systems operational</p>
             <p className="mt-4 text-xs text-purple-400/60">
               &copy; All Rights Reserved 2025-2026
             </p>

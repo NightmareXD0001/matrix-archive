@@ -46,7 +46,7 @@ const Psynapse = () => {
   }, [isLoaded]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-50 text-slate-800 font-sans relative overflow-x-hidden">
+    <div className="min-h-screen bg-matrix-black text-slate-800 font-sans relative overflow-x-hidden">
       <PsynapseCodeRain />
       
       <div className="absolute inset-0 bg-gradient-to-b from-matrix-black via-matrix-black/95 to-matrix-black/90 pointer-events-none"></div>

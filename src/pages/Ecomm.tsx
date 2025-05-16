@@ -16,7 +16,7 @@ const Ecomm = () => {
     '> Access granted',
     '> Loading business records...',
     '> Records compiled',
-    '> Displaying fiscal years - [2022-2025]_'
+    '> Displaying fiscal years - [2010-2025]_'
   ];
 
   useEffect(() => {
@@ -77,7 +77,7 @@ const Ecomm = () => {
                 <TrendingUp className="h-8 w-8 text-blue-600" />
                 <BarChart className="h-8 w-8 text-blue-700" />
               </div>
-              <p className="text-lg md:text-xl text-blue-600/80 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                 <GlitchText 
                   text="Digital Legacy Archive - Leadership Records" 
                   delay={1500}
@@ -117,8 +117,8 @@ const Ecomm = () => {
         )}
         
         {isLoaded && (
-          <footer className="mt-16 py-4 text-center text-blue-500/60 text-sm border-t border-blue-200">
-            <p>&gt; Business Analytics Platform - All systems operational</p>
+          <footer className="mt-16 py-4 text-center text-blue-500/60 text-sm border-t border-blue-600">
+            <p>&gt; The Matrix Clan Legacy Archive - All systems operational</p>
             <p className="mt-4 text-xs text-blue-400/60">
               &copy; All Rights Reserved 2025-2026
             </p>

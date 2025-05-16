@@ -51,7 +51,7 @@ const Ecomm = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-matrix-black via-matrix-black/95 to-matrix-black/90 pointer-events-none"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-8">
-        <div className="flex items-center justify-between mb-2 border-b border-blue-200 pb-2">
+        <div className="flex items-center justify-between mb-2 border-b border-blue-600 pb-2">
           <div className="flex items-center gap-2">
             <BarChart className="h-5 w-5 text-blue-600" />
             <span className="text-blue-600/80 text-sm">business_analytics_platform</span>

@@ -68,7 +68,7 @@ const Ecomm = () => {
         <header className="py-16 md:py-24 text-center relative overflow-hidden">
           {isLoaded ? (
             <>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-700 font-sans">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 <GlitchText text="The Ecomm Archives" className="text-blue-700 font-glitch" />
               </h1>
               <div className="flex items-center justify-center space-x-4 mb-6">

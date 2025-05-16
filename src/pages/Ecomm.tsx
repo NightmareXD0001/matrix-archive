@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import EcommCodeRain from '@/components/EcommCodeRain';
+import GlitchText from '@/components/GlitchText';
 import EcommBatchCard from '@/components/EcommBatchCard';
 import { batchDataEcomm } from '@/data/batchDataEcomm';
 import { BarChart, DollarSign, TrendingUp } from 'lucide-react';

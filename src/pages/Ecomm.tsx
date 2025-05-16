@@ -93,7 +93,7 @@ const Ecomm = () => {
         </header>
         
         {isLoaded && (
-          <div className="mb-12 text-sm text-blue-600/70 font-mono bg-blue-50 p-4 rounded-md shadow-inner">
+          <div className="mb-12 text-sm text-blue-600/70 font-mono p-4 rounded-md shadow-inner">
             {terminalText.map((text, index) => (
               <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 {text}

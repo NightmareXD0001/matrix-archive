@@ -16,7 +16,7 @@ const EcommBatchCard: React.FC<EcommBatchCardProps> = ({ batch, isActive = false
   return (
     <div 
       className={cn(
-        'relative border border-matrix/30 bg-matrix-terminal/70 backdrop-blur-sm rounded-md overflow-hidden',
+        'relative border border-blue-50/30 bg-matrix-terminal/70 backdrop-blur-sm rounded-md overflow-hidden',
         'transition-all duration-300 group hover:border-blue-500/70 hover:shadow-blue-100',
         className
       )}

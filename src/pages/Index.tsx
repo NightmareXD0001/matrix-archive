@@ -73,10 +73,10 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-4">
             <Link to="/ecomm" className="text-matrix/80 hover:text-matrix text-sm flex items-center gap-1 transition">
-              <span>Ecomm Theme</span>
+              <span>Ecomm Buzz</span>
             </Link>
             <Link to="/psynapse" className="text-matrix/80 hover:text-matrix text-sm flex items-center gap-1 transition">
-              <span>Psynapse Theme</span>
+              <span>Psynapse</span>
             </Link>
             <Code className="h-4 w-4 text-matrix/60" />
           </div>

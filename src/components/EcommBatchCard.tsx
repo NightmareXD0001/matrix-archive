@@ -38,7 +38,7 @@ const EcommBatchCard: React.FC<EcommBatchCardProps> = ({ batch, isActive = false
                     <span className="inline-block h-px w-4 bg-blue-400 mr-2"></span>
                     {member.position}:
                   </div>
-                  <div className="text-slate-700 pl-6 break-words">
+                  <div className="text-white/90 pl-6 break-words">
                     {member.names.join(', ')}
                   </div>
                 </div>

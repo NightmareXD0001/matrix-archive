@@ -57,10 +57,10 @@ const Ecomm = () => {
           </div>
           <div className="flex items-center gap-4">
             <Link to="/" className="text-blue-500 hover:text-blue-700 text-sm flex items-center gap-1 transition">
-              <span>Matrix Theme</span>
+              <span>Matrix Clan</span>
             </Link>
             <Link to="/psynapse" className="text-blue-500 hover:text-blue-700 text-sm flex items-center gap-1 transition">
-              <span>Psynapse Theme</span>
+              <span>Psynapse</span>
             </Link>
           </div>
         </div>

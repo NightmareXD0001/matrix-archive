@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import PsynapseCodeRain from '@/components/PsynapseCodeRain';
 import PsynapseBatchCard from '@/components/PsynapseBatchCard';
+import GlitchText from '@/components/GlitchText';
+
 import { batchDataPsynapse } from '@/data/batchDataPsynapse';
 import { Brain, Pause } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -68,16 +70,17 @@ const Psynapse = () => {
         <header className="py-16 md:py-24 text-center relative overflow-hidden">
           {isLoaded ? (
             <>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-purple-700 font-sans">
-                The Psynapse Archives
-              </h1>
+<h1 className="text-4xl md:text-6xl font-bold mb-6"><GlitchText text="The Psynapse" className="text-purple-700 font-glitch" />              </h1>
               <div className="flex items-center justify-center space-x-4 mb-6">
                 <Brain className="h-8 w-8 text-purple-500" />
                 <Brain className="h-8 w-8 text-purple-600" />
                 <Pause className="h-8 w-8 text-purple-700" />
               </div>
               <p className="text-lg md:text-xl text-purple-600/80 max-w-2xl mx-auto">
-                Cognitive Research & Psychological Studies Database
+                 <GlitchText 
+                  text="Digital Legacy Archive - Leadership Records" 
+                  delay={1500}
+                  speed={30}/>
               </p>
             </>
           ) : (

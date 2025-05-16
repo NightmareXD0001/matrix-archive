@@ -17,7 +17,7 @@ const Psynapse = () => {
     '> Connection established',
     '> Loading psychological profiles...',
     '> Profiles analyzed',
-    '> Displaying research cohorts - [2022-2025]_'
+    '> Displaying research cohorts - [2024-2025]_'
   ];
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const Psynapse = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-matrix-black via-matrix-black/95 to-matrix-black/90 pointer-events-none"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-8">
-        <div className="flex items-center justify-between mb-2 border-b border-purple-200 pb-2">
+        <div className="flex items-center justify-between mb-2 border-b border-purple-600 pb-2">
           <div className="flex items-center gap-2">
             <Brain className="h-5 w-5 text-purple-600" />
             <span className="text-purple-600/80 text-sm">neural_research_platform</span>
@@ -92,7 +92,7 @@ const Psynapse = () => {
         </header>
         
         {isLoaded && (
-          <div className="mb-12 text-sm text-purple-600/70 font-mono bg-purple-50 p-4 rounded-md shadow-inner">
+          <div className="mb-12 text-sm text-purple-600/70 font-mono p-4 rounded-md shadow-inner">
             {terminalText.map((text, index) => (
               <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 {text}

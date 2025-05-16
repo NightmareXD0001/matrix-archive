@@ -49,7 +49,7 @@ const Psynapse = () => {
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-50 text-slate-800 font-sans relative overflow-x-hidden">
       <PsynapseCodeRain />
       
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-50/90 via-indigo-50/95 to-white/90 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-matrix-black via-matrix-black/95 to-matrix-black/90 pointer-events-none"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-2 border-b border-purple-200 pb-2">

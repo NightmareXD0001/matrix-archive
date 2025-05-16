@@ -53,6 +53,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				matrix: {
+					green: '#00FF41',
+					'green-glow': '#00FF4133',
+					charcoal: '#121212',
+					black: '#000000',
+					terminal: '#0D0208'
 					DEFAULT: '#00FF41',
 					light: '#3Dff69',
 					dark: '#008F11',

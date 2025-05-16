@@ -76,7 +76,7 @@ const Psynapse = () => {
                 <Brain className="h-8 w-8 text-purple-600" />
                 <Pause className="h-8 w-8 text-purple-700" />
               </div>
-              <p className="text-lg md:text-xl text-purple-600/80 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                  <GlitchText 
                   text="Digital Legacy Archive - Leadership Records" 
                   delay={1500}

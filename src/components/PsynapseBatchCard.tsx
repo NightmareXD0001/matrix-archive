@@ -16,7 +16,7 @@ const PsynapseBatchCard: React.FC<PsynapseBatchCardProps> = ({ batch, isActive =
   return (
     <div 
       className={cn(
-        'relative border border-purple-300/30 bg-white/90 backdrop-blur-sm rounded-md overflow-hidden shadow-lg',
+        'relative border border-matrix/30 bg-matrix-terminal/70 backdrop-blur-sm rounded-md overflow-hidden',
         'transition-all duration-300 group hover:border-purple-500/70 hover:shadow-purple-100',
         className
       )}

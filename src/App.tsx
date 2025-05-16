@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import Index from "./pages/Index";
 import Ecomm from "./pages/Ecomm";
 import Psynapse from "./pages/Psynapse";
 import NotFound from "./pages/NotFound";
+import RouteWrapper from "@/components/RouteWrapper";
 
 const queryClient = new QueryClient();
 
@@ -17,13 +17,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/ecomm" element={<Ecomm />} />
-          <Route path="/psynapse" element={<Psynapse />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <RouteWrapper>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/ecomm" element={<Ecomm />} />
+            <Route path="/psynapse" element={<Psynapse />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </RouteWrapper>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

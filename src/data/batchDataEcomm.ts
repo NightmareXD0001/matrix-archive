@@ -2,6 +2,16 @@ import { BatchData } from "@/components/BatchCard";
 
 export const batchDataEcomm: BatchData[] = [
   {
+    year: "2024-2025",
+    members: [
+      { position: "President", names: ["Ida Kaushik"] },
+      { position: "Vice President", names: ["Swayam Seth"] },
+      { position: "General Secretary", names: ["Anischka Banga"] },
+      { position: "Joint Secretary", names: ["Aryan Thakur"] },
+      { position: "Executive Member", names: ["Mahima Soam", "Avraaj Singh Anand", "Ikjot Singh Anand", "Kajsimar Kour", "Karunay Malik", "Prajnav S. Murthy", "Sakshi Kumari", "Vikrant Sethi"] }
+    ]
+  },
+  {
     year: "2023-2024",
     members: [
       { position: "President", names: ["Shubaan Manuja"] },

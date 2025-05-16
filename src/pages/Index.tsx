@@ -6,8 +6,11 @@ import BatchCard from '@/components/BatchCard';
 import { batchData } from '@/data/batchData';
 import { Terminal, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import DarkModeToggle from '@/components/DarkModeToggle';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const Index = () => {
+  const { isDarkMode } = useDarkMode();
   const [isLoaded, setIsLoaded] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
   const [terminalText, setTerminalText] = useState<string[]>([]);
@@ -78,6 +81,7 @@ const Index = () => {
             <Link to="/psynapse" className="text-matrix/80 hover:text-matrix text-sm flex items-center gap-1 transition">
               <span>Psynapse Theme</span>
             </Link>
+            <DarkModeToggle />
             <Code className="h-4 w-4 text-matrix/60" />
           </div>
         </div>

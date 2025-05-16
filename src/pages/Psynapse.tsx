@@ -59,10 +59,10 @@ const Psynapse = () => {
           </div>
           <div className="flex items-center gap-4">
             <Link to="/" className="text-purple-500 hover:text-purple-700 text-sm flex items-center gap-1 transition">
-              <span>Matrix Theme</span>
+              <span>Matrix Clan</span>
             </Link>
             <Link to="/ecomm" className="text-purple-500 hover:text-purple-700 text-sm flex items-center gap-1 transition">
-              <span>Ecomm Theme</span>
+              <span>Ecomm Buzz</span>
             </Link>
           </div>
         </div>

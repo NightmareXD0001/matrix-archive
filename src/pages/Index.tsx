@@ -1,9 +1,11 @@
+
 import React, { useEffect, useState } from 'react';
 import CodeRain from '@/components/CodeRain';
 import GlitchText from '@/components/GlitchText';
 import BatchCard from '@/components/BatchCard';
 import { batchData } from '@/data/batchData';
 import { Terminal, Code } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -69,9 +71,14 @@ const Index = () => {
             <Terminal className="h-5 w-5 text-matrix" />
             <span className="text-matrix/80 text-sm">matrix_clan_database_v2.5</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
+            <Link to="/ecomm" className="text-matrix/80 hover:text-matrix text-sm flex items-center gap-1 transition">
+              <span>Ecomm Theme</span>
+            </Link>
+            <Link to="/psynapse" className="text-matrix/80 hover:text-matrix text-sm flex items-center gap-1 transition">
+              <span>Psynapse Theme</span>
+            </Link>
             <Code className="h-4 w-4 text-matrix/60" />
-            <span className="text-matrix/60 text-xs">system.active</span>
           </div>
         </div>
         

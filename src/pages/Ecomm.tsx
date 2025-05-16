@@ -69,7 +69,7 @@ const Ecomm = () => {
           {isLoaded ? (
             <>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-700 font-sans">
-                The Financial Archives
+                <GlitchText text="The Ecomm Archives" className="text-blue-700 font-glitch" />
               </h1>
               <div className="flex items-center justify-center space-x-4 mb-6">
                 <DollarSign className="h-8 w-8 text-blue-500" />
@@ -77,7 +77,10 @@ const Ecomm = () => {
                 <BarChart className="h-8 w-8 text-blue-700" />
               </div>
               <p className="text-lg md:text-xl text-blue-600/80 max-w-2xl mx-auto">
-                Market Leadership & Business Analytics Dashboard
+                <GlitchText 
+                  text="Digital Legacy Archive - Leadership Records" 
+                  delay={1500}
+                  speed={30}/>
               </p>
             </>
           ) : (
